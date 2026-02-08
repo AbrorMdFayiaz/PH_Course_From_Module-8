@@ -5,7 +5,7 @@ img{
 #article-main{
     display: flex;
     flex-direction: column;
-    /* gap:0; */
+    /* gap:10px; */
 }
 #section-1 img{
     width: 30vmax;
