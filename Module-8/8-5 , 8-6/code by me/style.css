@@ -1,0 +1,55 @@
+body>* {
+    background-color: bisque;
+    border: 2px solid orange;
+    padding: 25px;
+}
+h3{
+    grid-area: header;
+}
+nav{
+    grid-area: navbar;
+}
+main{
+    grid-area: main;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#advertisement{
+    grid-area: advertise;
+}
+footer{
+    grid-area: footer;
+}
+body{
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+    "header header  header  header header header"
+    "navbar main    main    main   main   sidebar"
+    "navbar main    main    main   main   advertise"
+    "footer footer  footer  footer footer footer"
+    ;
+}
+@media screen  and (max-width:576px) {
+    body{
+    grid-template-areas:
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "advertise"
+    "footer"
+    ;
+}
+}
+@media screen  and (min-width:576px) and (max-width:992px) {
+    body{
+    grid-template-areas:
+    "header    header  header  header"
+    "navbar    navbar  navbar  navbar"
+    "sidebar   main    main    main"
+    "advertise footer  footer  footer"
+    ;
+}
+}
